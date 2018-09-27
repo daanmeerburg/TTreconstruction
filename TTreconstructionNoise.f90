@@ -127,7 +127,7 @@ program TTreconstructionNoise
                 (prefactor(il1,il2,ell3)*a3j(il2))**2* &
                 (1./((powerspectra(1,il1)+ksz_on*kszps(il1))/ &
                 fac(il1)+(1-cvon)*(NoiseSpectra(1,il1))))* &
-                (powerspectra(5,il2)/(fac(il2)*fac2(il2)))**2/(powerspectra(5,il2)/(fac2(il2)*fac2(il2))+ &
+                (powerspectra(5,il2)/(fac(il2)*fac2(il2)))**2/(powerspectra(5,il2)/(fac2(il2)*fac(il2))+ &
                 (1-cvon)*NoiseSpectra(6,il2)/fac(il2))
            NoiseInvSum = NoiseInvSum + NoiseInvPartial     
            !write(*,'(I4,5E17.6)') j, NoiseInvSum, NoiseInvPartial, parity(ell(i)+ell(j)+1), a3j(j), powerspectra(5,j)!w3j(ell(i),ell(j),1)
